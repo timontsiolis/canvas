@@ -17,6 +17,8 @@ function Cricle(x, y, rad, dx, dy,color) {
         c.beginPath();
         c.arc(this.x,this.y,this.rad,0,Math.PI*2,false);
         c.strokeStyle = this.color;
+        c.fillStyle = this.color;
+        c.fill();
         c.stroke();
     };
 
@@ -32,8 +34,8 @@ function Cricle(x, y, rad, dx, dy,color) {
 
 var circleArray = [];
 
-for (var i = 0; i < 50; i++) {
-    var radius = 50*Math.random()+50;
+for (var i = 0; i < 200; i++) {
+    var radius = 10*Math.random()+10;
     var x = window.innerWidth/2-radius;
     var y = window.innerHeight/2-radius;
     var color = "rgba("
@@ -41,9 +43,9 @@ for (var i = 0; i < 50; i++) {
         +Math.random()*255+","+Math.random()*255+","
         +Math.random()+")";
 
-    var velocity = 5;
-    var dx = velocity*Math.random(),
-        dy =velocity*Math.random();
+    var velocity = 2;
+    var dx = velocity*Math.random()+velocity,
+        dy =velocity*Math.random()+velocity;
 
     circleArray.push(new Cricle(x,y,radius,dx,dy,color));
 }
