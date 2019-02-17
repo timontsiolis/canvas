@@ -33,7 +33,7 @@ function Cricle(x, y, rad, dx, dy,color) {
 var circleArray = [];
 
 for (var i = 0; i < 50; i++) {
-    var radius = 100*Math.random();
+    var radius = 50*Math.random()+50;
     var x = window.innerWidth/2-radius;
     var y = window.innerHeight/2-radius;
     var color = "rgba("
@@ -41,7 +41,9 @@ for (var i = 0; i < 50; i++) {
         +Math.random()*255+","+Math.random()*255+","
         +Math.random()+")";
 
-    var dx =10*Math.random(), dy =10*Math.random();
+    var velocity = 5;
+    var dx = velocity*Math.random(),
+        dy =velocity*Math.random();
 
     circleArray.push(new Cricle(x,y,radius,dx,dy,color));
 }
