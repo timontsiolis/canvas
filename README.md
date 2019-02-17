@@ -1,11 +1,6 @@
 # Canvas
 some examples that I created during my learning process of the Html canvas.
 
-# Showreel
-
-<canvas></canvas>
-<script src="canvasBounceInteractive.js"></script>
-
 # What I leaned
 * to use the html canvas tag.
 * push and pull to GIT via my IDE.
