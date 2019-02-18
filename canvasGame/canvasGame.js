@@ -19,11 +19,9 @@ var color = [
     "#ED553B"];
 
 window.addEventListener('keydown',function (ev) {
-    if (ev.keyCode === 32){
-        if (game) player.dy =-20;
-    }
-
-    if (ev.keyCode === 13){
+    if (ev.keyCode === 32) {
+        if (game) player.dy = -20;
+    } else if (ev.keyCode === 13) {
         init();
     }
 });
