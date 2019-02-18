@@ -129,5 +129,4 @@ function animate() {
         c.fillText("press Enter to start", 50, canvas.height / 2+40);
     }
 }
-init();
 animate();
